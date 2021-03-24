@@ -6,6 +6,9 @@ und dieses Projekt hält an [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Verhindert einen Fehler, wenn die aktuelle App nicht gesetzt ist
+- Das property miniVariant wird nun korrekt gesetzt
+
 ## [1.0.0-alpha.1] - 2021-03-24
 
 - Initialer release
