@@ -8,7 +8,7 @@
     class="ftw-navigation"
   >
     <div :class="miniVariant ? 'px-0' : 'px-4'" class="d-flex padding-trasition ftw-navigation-head mb-7">
-      <AppSwitcher :apps="apps" :current-app="currentApp" @update:current-app="setCurrentApp" v-on="$listeners">
+      <AppSwitcher :apps="apps" :current-app="currentApp" v-on="$listeners">
         <template v-slot:fallback-app>
           <slot name="fallback-app" />
         </template>
@@ -46,7 +46,7 @@
           </div>
         </v-fade-transition>
         <v-spacer />
-        <NavigationButton rounded class="pa-0 ml-2" @click="updateMiniVariant(!miniVariant)">
+        <NavigationButton rounded class="pa-0 ml-2" @click="toggleMiniVariant">
           <v-fade-transition>
             <v-icon v-if="miniVariant">mdi-chevron-right</v-icon>
             <v-icon v-else>mdi-chevron-left</v-icon>
@@ -112,11 +112,8 @@ export default {
     feedback() {
       this.$emit('feedback')
     },
-    setCurrentApp(app) {
-      this.$emit('update:current-app', app)
-    },
-    updateMiniVariant(isMiniVariant) {
-      this.$emit('update:mini-variant', isMiniVariant)
+    toggleMiniVariant() {
+      this.$emit('update:mini-variant', !this.miniVariant)
     },
   },
 }

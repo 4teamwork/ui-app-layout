@@ -6,6 +6,7 @@
     version="2021.6.1.dev0"
     show-help
     show-feedback
+    :mini-variant.sync="miniVariant"
   >
     <v-main>
       {{ currentApp.title }}
@@ -23,6 +24,7 @@ export default {
   },
   data() {
     return {
+      miniVariant: false,
       currentApp: {
         title: 'GEVER Steuerverwaltung',
         subtitle: '',

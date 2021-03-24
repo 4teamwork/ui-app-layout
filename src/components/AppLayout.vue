@@ -9,7 +9,7 @@
         :version="version"
         :show-help="showHelp"
         :show-feedback="showFeedback"
-        @update:current-app="setCurrentApp"
+        :mini-variant="miniVariant"
         v-on="$listeners"
       >
         <template v-slot:navigation-main>
@@ -75,10 +75,9 @@ export default {
       type: Boolean,
       default: () => false,
     },
-  },
-  methods: {
-    setCurrentApp(app) {
-      this.$emit('update:current-app', app)
+    miniVariant: {
+      type: Boolean,
+      default: () => false,
     },
   },
 }
