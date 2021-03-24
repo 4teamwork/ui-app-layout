@@ -8,7 +8,7 @@
           min-width="50px"
           class="pa-0 rounded-0"
           :class="targetClass"
-          :style="{ 'background-color': hover || menuOpen ? '' : currentApp.color }"
+          :style="{ 'background-color': hover || menuOpen ? '' : currentAppColor }"
           v-on="on"
         >
           <v-icon v-if="hasApps && (hover || menuOpen)" color="primary"> mdi-apps </v-icon>
@@ -68,6 +68,9 @@ export default {
   computed: {
     hasApps() {
       return this.apps.length > 0
+    },
+    currentAppColor() {
+      return (this.currentApp && this.currentApp.color) || 'primary'
     },
   },
   methods: {
