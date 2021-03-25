@@ -6,6 +6,8 @@ und dieses Projekt hält an [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Stellt eine Dokumentation zur Vefügung wie man das Package in ein Projekt integriert
+
 ## [1.0.0-alpha.3] - 2021-03-25
 
 - Vor dem Release wird das Package automatisch builded
