@@ -6,6 +6,8 @@ und dieses Projekt hält an [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-alpha.3] - 2021-03-25
+
 - Vor dem Release wird das Package automatisch builded
 - Die [Unreleased] Section wird nun automatisch beim Release zum Changelog hinzugefügt
 
