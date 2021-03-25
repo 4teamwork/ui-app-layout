@@ -4,5 +4,8 @@
       "filename": "CHANGELOG.md",
       "addUnreleased": true
     }
+  },
+  "hooks": {
+    "after:bump": "npm run build"
   }
 }
