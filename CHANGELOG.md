@@ -6,6 +6,8 @@ und dieses Projekt hält an [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-alpha.5] - 2021-03-29
+
 - Das Bild des Bentuzers hat nun ein Benutzericon als Standard
 
 ## [1.0.0-alpha.4] - 2021-03-25
