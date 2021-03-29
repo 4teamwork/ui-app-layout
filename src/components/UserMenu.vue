@@ -5,7 +5,7 @@
         <slot name="avatar">
           <v-avatar :size="27" class="user-menu">
             <slot name="avatar-image">
-              <img src="https://cdn.vuetifyjs.com/images/john.jpg" />
+              <v-icon>mdi-account</v-icon>
             </slot>
           </v-avatar>
         </slot>
