@@ -7,7 +7,7 @@
           height="50px"
           min-width="50px"
           class="pa-0 rounded-0"
-          :class="targetClass"
+          :class="[targetClass, { 'primary': !currentAppColor}]"
           :style="{ 'background-color': hover || menuOpen ? '' : currentAppColor }"
           v-on="on"
         >
@@ -70,7 +70,7 @@ export default {
       return this.apps.length > 0
     },
     currentAppColor() {
-      return (this.currentApp && this.currentApp.color) || 'primary'
+      return this.currentApp && this.currentApp.color
     },
   },
   methods: {
