@@ -26,7 +26,7 @@
       <v-fade-transition>
         <div v-if="!miniVariant">
           <span class="caption bodylight--text text-no-wrap">{{ `${currentAppName} ${version}` }}</span>
-          <div class="d-flex pb-4 align-center">
+          <div class="d-flex pb-4 pt-2 align-center">
             <span class="caption bodylight--text text-no-wrap pr-1">Created by</span>
             <CompanyLogo />
           </div>
