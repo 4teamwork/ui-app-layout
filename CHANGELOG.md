@@ -6,6 +6,9 @@ und dieses Projekt hält an [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Neues 4teamwork Logo hinzugefügt
+- Bugfix: Default app beim App Switcher erhält nun die Primärfarbe
+
 ## [1.0.0-alpha.5] - 2021-03-29
 
 - Das Bild des Bentuzers hat nun ein Benutzericon als Standard
