@@ -6,6 +6,8 @@ und dieses Projekt hält an [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0-alpha.6] - 2021-06-21
+
 - Neues 4teamwork Logo hinzugefügt
 - Bugfix: Default app beim App Switcher erhält nun die Primärfarbe
 
